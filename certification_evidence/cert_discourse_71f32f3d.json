@@ -1,0 +1,28 @@
+{
+  "run_id": "cert_discourse_71f32f3d",
+  "connector_key": "discourse",
+  "destination": "https://forum.test.local",
+  "started_at": "2026-11-18T06:14:53.603945+00:00",
+  "steps": {
+    "validate": {
+      "ok": true,
+      "violations": []
+    },
+    "publish": {
+      "platform_post_id": "disc_post_1794982493",
+      "live_url": "https://forum.test.local/t/disc_post_1794982493",
+      "status": "live"
+    },
+    "get_status": {
+      "status": "live",
+      "live_url": "https://forum.example.com/t/disc_post_1794982493"
+    },
+    "delete": {
+      "deleted": true
+    }
+  },
+  "certified": true,
+  "level": "L3",
+  "completed_at": "2026-11-18T06:14:53.603980+00:00",
+  "duration_s": 0.0
+}

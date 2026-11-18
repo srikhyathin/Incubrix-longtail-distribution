@@ -1,0 +1,29 @@
+{
+  "run_id": "cert_hmac_webhook_888404fc",
+  "connector_key": "hmac_webhook",
+  "destination": null,
+  "started_at": "2026-11-18T06:03:35.001582+00:00",
+  "steps": {
+    "validate": {
+      "ok": true,
+      "violations": []
+    },
+    "publish": {
+      "platform_post_id": "wh_1794981815",
+      "live_url": "https://partner.test.local/hook/events/wh_1794981815",
+      "status": "live",
+      "signature": "sha256=b9490adb7afa217e43dcedd19eeb7532f3511fd2aa7b2a5e88e47678478af378"
+    },
+    "get_status": {
+      "status": "live",
+      "live_url": "https://partner.example.com/events/wh_1794981815"
+    },
+    "delete": {
+      "deleted": true
+    }
+  },
+  "certified": true,
+  "level": "L3",
+  "completed_at": "2026-11-18T06:03:35.001785+00:00",
+  "duration_s": 0.0002
+}

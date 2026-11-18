@@ -1,0 +1,28 @@
+{
+  "run_id": "cert_devto_a4a01f2c",
+  "connector_key": "devto",
+  "destination": "https://dev.to",
+  "started_at": "2026-11-18T06:10:27.815689+00:00",
+  "steps": {
+    "validate": {
+      "ok": true,
+      "violations": []
+    },
+    "publish": {
+      "platform_post_id": "devto_1794982227",
+      "live_url": "https://dev.to/incubrix/devto_1794982227",
+      "status": "live"
+    },
+    "get_status": {
+      "status": "live",
+      "live_url": "https://dev.to/incubrix/devto_1794982227"
+    },
+    "delete": {
+      "deleted": true
+    }
+  },
+  "certified": true,
+  "level": "L3",
+  "completed_at": "2026-11-18T06:10:27.815723+00:00",
+  "duration_s": 0.0
+}

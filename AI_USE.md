@@ -1,0 +1,1 @@
+* **AI Coding Assistant:** Used for structuring boilerplate FastAPI routes, designing the certification harness lifecycle, and writing test assertions. All code and logic were manually reviewed, tested, and validated against the IncuBrix brief requirements.

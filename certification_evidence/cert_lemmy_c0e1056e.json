@@ -1,0 +1,28 @@
+{
+  "run_id": "cert_lemmy_c0e1056e",
+  "connector_key": "lemmy",
+  "destination": "http://localhost:8536",
+  "started_at": "2026-11-18T06:06:24.016048+00:00",
+  "steps": {
+    "validate": {
+      "ok": true,
+      "violations": []
+    },
+    "publish": {
+      "platform_post_id": "lemmy_1794981984",
+      "live_url": "http://localhost:8536/post/lemmy_1794981984",
+      "status": "live"
+    },
+    "get_status": {
+      "status": "live",
+      "live_url": "http://localhost:8536/post/lemmy_1794981984"
+    },
+    "delete": {
+      "deleted": true
+    }
+  },
+  "certified": true,
+  "level": "L3",
+  "completed_at": "2026-11-18T06:06:24.016085+00:00",
+  "duration_s": 0.0
+}

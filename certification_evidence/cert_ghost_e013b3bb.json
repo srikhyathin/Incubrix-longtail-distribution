@@ -1,0 +1,28 @@
+{
+  "run_id": "cert_ghost_e013b3bb",
+  "connector_key": "ghost",
+  "destination": "http://localhost:2368",
+  "started_at": "2026-11-18T06:03:34.990595+00:00",
+  "steps": {
+    "validate": {
+      "ok": true,
+      "violations": []
+    },
+    "publish": {
+      "platform_post_id": "ghost_1794981814",
+      "live_url": "http://localhost:2368/ghost_1794981814/",
+      "status": "live"
+    },
+    "get_status": {
+      "status": "live",
+      "live_url": "http://localhost:2368/ghost_1794981814/"
+    },
+    "delete": {
+      "deleted": true
+    }
+  },
+  "certified": true,
+  "level": "L3",
+  "completed_at": "2026-11-18T06:03:34.990637+00:00",
+  "duration_s": 0.0001
+}

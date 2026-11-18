@@ -1,0 +1,1 @@
+{"connector_key": "discourse", "rendition": {"title": "Test Batch Post", "body": "Hello world"}, "destination": {"base_url": "https://forum.test.local"}, "connection": {"simulate": true}}

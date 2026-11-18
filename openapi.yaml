@@ -1,0 +1,67 @@
+openapi: 3.1.0
+info:
+  title: IncuBrix Long-Tail Distribution Service
+  version: 1.0.0
+  description: Production-grade connector service for long-tail publishing destinations.
+paths:
+  /health:
+    get:
+      summary: Health Check
+      responses:
+        '200':
+          description: Service is healthy
+  /ready:
+    get:
+      summary: Readiness Check
+      responses:
+        '200':
+          description: Service is ready
+  /api/v1/jobs:
+    post:
+      summary: Create Publishing Job (Asynchronous 202)
+      parameters:
+        - in: header
+          name: Idempotency-Key
+          required: false
+          schema:
+            type: string
+      responses:
+        '202':
+          description: Job queued or retrieved via idempotency cache
+        '422':
+          description: Rule violation or specification check failure
+  /api/v1/jobs/{job_id}:
+    get:
+      summary: Get Job Status and Results
+      parameters:
+        - in: path
+          name: job_id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Job status and manifest
+  /api/v1/certify:
+    post:
+      summary: Run Certification Harness on Destination
+      responses:
+        '200':
+          description: Certification report and stored evidence file
+  /connector/v1/{connector_key}/{method}:
+    post:
+      summary: Invoke Connector Method (Appendix A Contract)
+      parameters:
+        - in: path
+          name: connector_key
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: method
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Method execution result
